@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="avatar.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Profile Card</title>
+  </head>
+  <body>
+    <div class="top"></div>
+    <div class="bottom"></div>
+    <div class="wrapper">
+      <div class="card">
+        <div class="photo"></div>
+        <div class="heading">sreejita sen</div>
+        <div class="subheading">frontend developer</div>
+        <div class="icon">
+          <div class="share">
+            <button id="share" class="btn" onclick="openModel()">
+              <i class="fa-solid fa-share"></i>
+              <div>share my profile</div>
+            </button>
+          </div>
+          <div class="fol">
+            <button class="btn">follow me</button>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+
+    <div class="pop">
+        <div class="head">
+           <h1>share my profile</h1>
+           <i onclick="closeModel()" class="fa-solid fa-xmark fa-2xl"></i>
+        </div>
+        <div class="subhead">
+             share this via
+        </div>
+        <div class="icon_bar">
+          <a href="#" class="box" id="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="box" id="twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="box" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="box" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="#" class="box" id="telegram">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+        </div>
+    </div>
+
+    <div class="overlay" onclick="closeModel()"></div>
+
+    <script src="node.js"></script>
+  </body>
+</html>
